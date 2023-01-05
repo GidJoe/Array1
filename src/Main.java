@@ -29,6 +29,6 @@ public class Main {
         System.out.println("Array 1 nachher" + Arrays.toString(array1));
         System.out.println("Array 2 nachher " + Arrays.toString(array2));
 
-
+        System.out.println("Array 2 na123123123chher " + Arrays.toString(array2));
     }
 }
