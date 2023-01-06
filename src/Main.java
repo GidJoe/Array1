@@ -9,11 +9,11 @@ public class Main {
 
         System.out.println("Wie groß soll das Array sein?");
         int a = myscan.nextInt();
-        int [] array1 = new int [a];
+        int[] array1 = new int[a];
 
 
         for (int i = 0; i < a; i++) {
-            System.out.println("Bitte die "+ (i+1) + ". Zahl eingeben");
+            System.out.println("Bitte die " + (i + 1) + ". Zahl eingeben");
             array1[i] = myscan.nextInt();
         }
 
@@ -23,8 +23,19 @@ public class Main {
         System.out.println("Array 2 vorher " + Arrays.toString(array2));
 
         for (int z = 0, b = 1; z < array1.length; z++, b++) {
-            array2[array2.length-b] = array1[z];
-            }
+            array2[array2.length - b] = array1[z];
+        }
+
+        System.out.println("Array 1 nachher" + Arrays.toString(array1));
+        System.out.println("Array 2 nachher " + Arrays.toString(array2));
+
+        for (int c = 0, v = 1; c < array1.length/2; c++, v++){
+        if (array1[c]%2==0) {
+            array2[c] = array1[c];
+        } else {
+            array2[array2.length-v] = array1[c];
+
+        }}
 
         System.out.println("Array 1 nachher" + Arrays.toString(array1));
         System.out.println("Array 2 nachher " + Arrays.toString(array2));
