@@ -40,7 +40,7 @@ public class Main {
                 if (array2.length==array3.length) {
                     vollständig = false;
                 }
-            } else {
+            if (array1[i] % 2 != 0){
                 array3[i] = array1[array1.length-b];
                 System.out.println(Arrays.toString(array3));
                 b++;
